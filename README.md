@@ -3,9 +3,9 @@ A structured collection of Data Structures & Algorithms solutions in C++ and Pyt
 This repository reflects my continuous practice in problem-solving, algorithmic thinking, and interview preparation.
 
 ## Progress
- Total Problems solved - 87 ,
- Easy -  34 ,
- Medium - 42  ,
+ Total Problems solved - 93 ,
+ Easy -  37 ,
+ Medium - 45 ,
  Hard -  11
 
  ## Languages

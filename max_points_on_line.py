@@ -1,16 +1,12 @@
 class Solution(object):
     def maxPoints(self, points):
-        """
-        :type points: List[List[int]]
-        :rtype: int
-        """
 
         n = len(points)
 
         if n <= 2:
             return n
 
-        ans = 1
+        ans = 0
 
         for i in range(n):
 
@@ -24,13 +20,25 @@ class Solution(object):
                 dx = x2 - x1
                 dy = y2 - y1
 
-                # Reduce slope using gcd
                 g = self.gcd(dx, dy)
 
                 dx //= g
                 dy //= g
 
-                slope = (dx, dy)
+                # normalize sign
+                if dx < 0:
+                    dx *= -1
+                    dy *= -1
+
+                # vertical line
+                if dx == 0:
+                    dy = 1
+
+                # horizontal line
+                if dy == 0:
+                    dx = 1
+
+                slope = (dy, dx)
 
                 slopes[slope] = slopes.get(slope, 1) + 1
 

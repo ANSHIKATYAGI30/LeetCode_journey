@@ -9,6 +9,6 @@ This repository reflects my continuous practice in problem-solving, algorithmic 
  Hard -  19
 
  ## Languages
- C, Python, Javascript
+ C, Python, Javascript, Java
 
  

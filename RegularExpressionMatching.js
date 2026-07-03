@@ -3,7 +3,7 @@
  * @param {string} p
  * @return {boolean}
  */
-var isMatch = function(s, p) {
+var isMatch = function(s, p){
     const memo = {};
     function dp(i, j) {
         const key = i + "," + j;

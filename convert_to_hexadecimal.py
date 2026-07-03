@@ -17,9 +17,7 @@ class Solution(object):
         while num > 0:
 
             digit = num % 16
-
             result = hex_chars[digit] + result
-
             num //= 16
 
         return result

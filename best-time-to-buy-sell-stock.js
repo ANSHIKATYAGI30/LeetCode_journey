@@ -13,6 +13,5 @@ var maxProfit = function(prices) {
         // calculate profit if sold today
         maxProfit = Math.max(maxProfit, price - minPrice);
     }
-
     return maxProfit;
 };

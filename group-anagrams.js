@@ -4,7 +4,7 @@
  */
 var groupAnagrams = function(strs) {
     let map = new Map();
-
+    
     for(let str of strs){
         let key = str.split('').sort().join('');
 

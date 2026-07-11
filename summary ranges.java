@@ -3,13 +3,10 @@ import java.util.*;
 class Solution {
 
     public List<String> summaryRanges(int[] nums) {
-
         List<String> ans = new ArrayList<>();
-
         int i = 0;
 
         while (i < nums.length) {
-
             int start = nums[i];
 
             // Move while numbers are consecutive

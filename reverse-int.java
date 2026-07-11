@@ -18,10 +18,8 @@ class Solution {
             }
 
             reverse = reverse * 10 + digit;
-
             x /= 10;
         }
-
         return reverse;
     }
 }

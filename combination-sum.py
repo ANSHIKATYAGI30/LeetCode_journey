@@ -9,7 +9,6 @@ class Solution(object):
         result = []
 
         def backtrack(start, target, path):
-
             # Found valid combination
             if target == 0:
                 result.append(path[:])
@@ -20,9 +19,7 @@ class Solution(object):
                 return
 
             for i in range(start, len(candidates)):
-
                 path.append(candidates[i])
-
                 # Reuse same element → pass i again
                 backtrack(i, target - candidates[i], path)
 

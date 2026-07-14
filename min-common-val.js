@@ -3,8 +3,7 @@
  * @param {number[]} nums2
  * @return {number}
  */
-var getCommon = function(nums1, nums2) {
-    
+var getCommon = function(nums1, nums2) {    
     let i = 0;
     let j = 0;
     
@@ -17,6 +16,5 @@ var getCommon = function(nums1, nums2) {
         }
         else{ j++; }
     }
-
     return -1;
 };

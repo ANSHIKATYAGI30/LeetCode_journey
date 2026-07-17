@@ -1,4 +1,5 @@
 class Solution {
+    
     public int divide(int dividend, int divisor) {
         // Overflow case
         if (dividend == Integer.MIN_VALUE && divisor == -1) {

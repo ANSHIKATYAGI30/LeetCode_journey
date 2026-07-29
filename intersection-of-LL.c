@@ -12,7 +12,6 @@ struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *he
     struct ListNode *b = headB;
 
     while (a != b) {
-
         // When reaching end, jump to other list
         a = (a == NULL) ? headB : a->next;
         b = (b == NULL) ? headA : b->next;

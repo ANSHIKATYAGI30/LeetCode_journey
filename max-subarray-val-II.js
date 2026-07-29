@@ -22,6 +22,7 @@ var maxTotalValue = function (nums, k) {
         const j = 31 - Math.clz32(r - l + 1);
         return Math.max(stMax[l][j], stMax[r - (1 << j) + 1][j]);
     };
+    
     const queryMin = (l, r) => {
         const j = 31 - Math.clz32(r - l + 1);
         return Math.min(stMin[l][j], stMin[r - (1 << j) + 1][j]);
@@ -31,6 +32,7 @@ var maxTotalValue = function (nums, k) {
     for (let l = 0; l < n; l++) {
         heap.push([queryMax(l, n - 1) - queryMin(l, n - 1), l, n - 1]);
     }
+    
     let ans = 0;
     while (k--) {
         const [val, l, r] = heap.pop();

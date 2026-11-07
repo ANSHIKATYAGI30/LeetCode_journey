@@ -14,7 +14,7 @@ class Solution:
                 dfs(node.left, path)
                 dfs(node.right, path)
 
-            # Backtracking
+            #Backtracking
             path.pop()
 
         dfs(root, [])
